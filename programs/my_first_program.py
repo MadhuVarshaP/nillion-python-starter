@@ -9,4 +9,6 @@ def nada_main():
     # write the computation for your program here - use my_int1 and my_int2 as inputs
     # make sure you change the output below to be your new output
 
-    return [Output(my_int1, "my_output", party1)]
+    condition = my_int1 > my_int2
+    maximum = condition.if_else(my_int1, my_int2)
+    return [Output(maximum, "maximum", party1)]
